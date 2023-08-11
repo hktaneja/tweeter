@@ -1,0 +1,111 @@
+.new-tweet {
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  border-bottom: 1px solid #ccc;  
+  padding: 30px;
+}
+.new-tweet form {
+  display: flex;
+  flex-direction: column; /* Stack form elements vertically */
+  align-items: stretch; /* Stretch form elements horizontally */
+  width: 100%;
+}
+
+.new-tweet textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 4px solid grey;
+  margin-bottom: 10px;
+}
+
+.new-tweet button {
+  font-family: 'Bungee', cursive;
+  background-color: #4056A1;
+  color: #FFFFFF;
+
+}
+
+.counter {
+  position:absolute;
+  right: 0;  
+  font-family: 'Bungee', cursive;
+  color: #2c2c2c;
+ 
+}
+
+.new-tweet .counter.over-limit {
+  color: red; /* Change color to red when over the limit */
+}
+
+.tweets {
+  width: 100%;
+  display:flex;
+  flex-direction: column; /* Stack form elements vertically */
+  justify-content: space-between;   
+  border: 4px solid grey;
+   
+}
+article.tweet header {
+  background-color: #f2f2f2;
+  background-image: none;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  height: 40px;
+  align-items:start;
+ 
+
+}
+article.tweet footer {
+  background-color: #f2f2f2;
+  background-image: none;  
+  border-bottom: 1px solid #ccc;
+  height: 40px;
+  padding-left: 10px;
+}
+
+article.tweet label {
+  width: 100%;   
+  padding: 10px;
+  padding-left: 10px;
+  margin: 0 auto;
+  border-bottom: 4px solid grey;  
+}
+
+article.tweet {
+  position: relative;
+}
+
+/* Style the icons and set their position */
+article.tweet .icons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+  background-color: #f2f2f2;
+  transition: background-color 0.3s;
+}
+
+/* Style the individual icons */
+article.tweet .icons i {
+  font-size: 18px;
+  color: #999;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+/* Change color and add shadow on hover */
+article.tweet:hover .icons {
+  background-color: #e5e5e5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+article.tweet:hover .icons i {
+  color: #4056A1;
+}
+
