@@ -43,22 +43,27 @@ View the functionalities (with animated GIF) in [Features](#features) section.
 
 ### 1. Submit new tweet with form
 
-![write-tweet.gif](./docs/write-tweet.gif)  
+![Create-Tweet1.png](https://github.com/hktaneja/tweeter/blob/master/public/docs/Create-Tweet1.png?raw=true) 
+![Create-Tweet2.png](https://github.com/hktaneja/tweeter/blob/master/public/docs/Create-Tweet2.png?raw=true) 
 When a user submits a valid tweet, the new tweet is displayed.
 
 &nbsp;
 
 ### 2. Display error message
 
-![error_message.gif](./docs/error_message.gif)  
+![Empty-Tweet.png](https://github.com/hktaneja/tweeter/blob/master/public/docs/Empty-Tweet.png?raw=true) 
+![Big-Tweet.png](https://github.com/hktaneja/tweeter/blob/master/public/docs/Big-Tweet.png?raw=true)
 When a user submits an invalid tweet (empty or contains more than 140 characters), an error message is displayed.
 
 &nbsp;
 
 ### 3. Responsive Design
 
-![responsive.gif](./docs/responsive.gif)  
+![ResponsiveDesign1.png](https://github.com/hktaneja/tweeter/blob/master/public/docs/ResponsiveDesign1.png?raw=true)  
 The web page has two layouts on different screen sizes (Breakpoint: 1024px).
+
+![ResponsiveDesign2.png](https://github.com/hktaneja/tweeter/blob/master/public/docs/ResponsiveDesign2.png?raw=true)  
+The web page has two layouts on different screen sizes (Breakpoint: 768px).
 
 &nbsp;
 
