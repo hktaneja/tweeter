@@ -8,7 +8,7 @@ $(document).ready(function() {
     const $errorMessage = $('.error-message');
     // Get the form data
     const formData = $(this).serialize();
-    const tweetText = $('#tweet-text').val();
+    const tweetText = $('#tweet-text').val().trim();
     // validation for form data
     if (tweetText === '' || tweetText === null) {
       $errorMessage.text('The tweet is empty'); // Set error message text
@@ -27,6 +27,7 @@ $(document).ready(function() {
         console.log('Success:', response);
         // Clear the textarea
         $('#tweet-text').val('');
+        $('.counter').removeClass('over-limit').text('140');
         $errorMessage.slideUp(); // Hide the error message after successful submission
         // Fetch and render the updated list of tweets
         loadTweets();
@@ -71,9 +72,7 @@ const createTweetElement = function(tweetData) {
 
 // Helper function to escape HTML entities
 const escapeHtml = function(str) {
-  let div = document.createElement("div");
-  div.appendChild(document.createTextNode(str));
-  return div.innerHTML;
+  return $("<div>").text(str).html();
 };
 //
 
